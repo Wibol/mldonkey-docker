@@ -1,4 +1,4 @@
-# mldonkey-ubuntu
+# mldonkey-docker
 Dockerized mlDonkey 3.1.6 on Ubuntu 18.04 in 90MB image (only eDonkey and Kademlia). This repository host the Dockerfile for building mlDonkey Docker image. You will need to [install Docker](https://docs.docker.com/engine/install/) first.
 
 
