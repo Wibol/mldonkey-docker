@@ -10,9 +10,9 @@ Dockerized mlDonkey 3.1.6 on Ubuntu 18.04 in 90MB image (only eDonkey and Kademl
 
 ***or***
 
-    git clone https://github.com/Wibol/mldonkey-docker.git && cd mldonkey
+    git clone https://github.com/Wibol/mldonkey-docker.git && cd mldonkey-docker
 
-    docker build -t mldonkey-ubuntu .
+    docker build -t wibol/mldonkey-ubuntu .
 
 
 ### To create the container:
@@ -21,7 +21,7 @@ Dockerized mlDonkey 3.1.6 on Ubuntu 18.04 in 90MB image (only eDonkey and Kademl
     -p 4080:4080 -p 4000:4000 -p 4001:4001 \
     -p 20562:20562 -p 20566:20566/udp -p 16965:16965/udp \
     -v "<$HOME/Downloads/mlDonkey>:/var/lib/mldonkey/incoming/files" \
-    mldonkey-ubuntu
+    wibol/mldonkey-ubuntu
 
 mlDonkey stores data inside /var/lib/mldonkey/incoming/files container directory, so we mount it on local filesystem for easy access. We must remove "<>" and customize its content.
 
