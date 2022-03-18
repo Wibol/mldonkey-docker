@@ -17,7 +17,7 @@ Dockerized mlDonkey 3.1.6 on Ubuntu 18.04 in 90MB image (only eDonkey and Kademl
 
 ### To create the container:
 
-    docker create --name mldonkey --restart=always \
+    docker create --name mldonkey-ubuntu --restart=always \
     -p 4080:4080 -p 4000:4000 -p 4001:4001 \
     -p 20562:20562 -p 20566:20566/udp -p 16965:16965/udp \
     -v "<$HOME/Downloads/mlDonkey>:/var/lib/mldonkey/incoming/files" \
@@ -30,7 +30,7 @@ mlDonkey stores data inside /var/lib/mldonkey/incoming/files container directory
 
 Open 20562/tcp, 20566/udp and 16965/udp in your router and OS.
 
-    docker start mldonkey
+    docker start mldonkey-ubuntu
 
 Then you can access mlDonkey like http://127.0.0.1:4080 or using "mldonkey-gui" installed from your distro repo.
 
