@@ -28,7 +28,7 @@ mlDonkey stores data inside /var/lib/mldonkey/incoming/files container directory
 
 ### To run container:
 
-Open 20562/tcp, 20566/udp and 16965/udp in your router and OS.
+Open 20562/tcp, 20566/udp and 16965/udp ports in your router and OS.
 
     docker start mldonkey-ubuntu
 
