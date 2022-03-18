@@ -31,10 +31,10 @@ if [ ! -f /var/lib/mldonkey/downloads.ini ]; then
     /usr/lib/mldonkey/mldonkey_command -p "" "urlremove http://www.gruk.org/server.met.gz" "save"
     /usr/lib/mldonkey/mldonkey_command -p "" "urlremove http://update.kceasy.com/update/fasttrack/nodes.gzip" "save"
     /usr/lib/mldonkey/mldonkey_command -p "" "urlremove http://dchublist.com/hublist.config.bz2" "save"
-    /usr/lib/mldonkey/mldonkey_command -p "" "urladd server.met http://upd.emule-security.org/server.met" "save"
-    /usr/lib/mldonkey/mldonkey_command -p "" "urladd kad http://upd.emule-security.org/nodes.dat" "save"
-    /usr/lib/mldonkey/mldonkey_command -p "" "urladd guarding.p2p http://upd.emule-security.org/ipfilter.zip" "save"
-    /usr/lib/mldonkey/mldonkey_command -p "" "urladd geoip.dat http://upd.emule-security.org/ip-to-country.csv.zip" "save"
+    /usr/lib/mldonkey/mldonkey_command -p "" "urladd server.met http://upd.emule-security.org/server.met 25" "save"
+    /usr/lib/mldonkey/mldonkey_command -p "" "urladd kad http://upd.emule-security.org/nodes.dat 0" "save"
+    /usr/lib/mldonkey/mldonkey_command -p "" "urladd guarding.p2p http://upd.emule-security.org/ipfilter.zip 250" "save"
+    /usr/lib/mldonkey/mldonkey_command -p "" "urladd geoip.dat http://upd.emule-security.org/ip-to-country.csv.zip 0" "save"
     if [ -z "$MLDONKEY_ADMIN_PASSWORD" ]; then
         /usr/lib/mldonkey/mldonkey_command -p "" "kill"
     else
