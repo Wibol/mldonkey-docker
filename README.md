@@ -44,10 +44,17 @@ Incomming directory is owned by "mldonkey" container user (uid=101, gid=101), so
     sudo chmod -R 777 <~/Downloads/mlDonkey>
 
 
-### Other optional mounts
+### Other optional mounts:
 
     -v "</var/lib/mldonkey>:/var/lib/mldonkey" \
     -v "</tmp/mldonkey>:/var/lib/mldonkey/temp" \
     -v "<$HOME/Video/mlDonkey>:/var/lib/mldonkey/shared" \
 
 If these directories are not mounted on a different place, they will all reside on the system's root partition, which is where Docker stores data by default. Be sure you have enough free space on it.
+
+### Known problems:
+
+When creating the container we received the error:
+> Error response from daemon: create </home/wibol/Downloads/mlDonkey>: "</home/wibol/Downloads/mlDonkey>" includes invalid characters for a local volume name, only "[a-zA-Z0-9][a-zA-Z0-9_.-]" are allowed. If you intended to pass a host directory, use absolute path.
+
+To resolve it we must remove "<>" from the local mount point.
