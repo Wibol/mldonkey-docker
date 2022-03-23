@@ -42,7 +42,6 @@ if [ ! -f /var/lib/mldonkey/downloads.ini ]; then
         /usr/lib/mldonkey/mldonkey_command -u admin -p "$MLDONKEY_ADMIN_PASSWORD" "kill"
     fi
     # First port 6209 is for overnet, second 16965 for kad, we leave all the same
-    sed -i '0,/   port =/s/   port =.*/  port = 6209/' /var/lib/mldonkey/donkey.ini
     sed -i '0,/   port =/s/   port =.*/  port = 16965/' /var/lib/mldonkey/donkey.ini
     sed -i 's/  port =/   port =/' /var/lib/mldonkey/donkey.ini
 fi
