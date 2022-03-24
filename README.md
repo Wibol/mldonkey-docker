@@ -35,11 +35,15 @@ Open 20562/tcp, 20566/udp and 16965/udp ports in your router and OS.
 Then you can access mlDonkey like http://127.0.0.1:4080 or using "mldonkey-gui" installed from your distro repo.
 
 - User: admin
-- Password: Passw0rd- (you can change it in Dockerfile before you build the image)
+- Password: Passw0rd-
 
 ![image](https://github.com/Wibol/mldonkey-docker/blob/main/d.png)
 
-Incomming directory is owned by "mldonkey" container user (uid=101, gid=101), so we need to change permissions for full access:
+You can change the default password later from the telnet, web or GUI command lines:
+
+    useradd admin <NewPassw0rd->
+
+We must remove "<>" and customize its content. Incomming directory is owned by "mldonkey" container user (uid=101, gid=101), so we need to change permissions for full access:
 
     sudo chmod -R 777 <~/Downloads/mlDonkey>
 
