@@ -23,7 +23,7 @@ Dockerized mlDonkey 3.1.6 on Ubuntu 18.04 in 90MB image (only eDonkey and Kademl
     -v "<$HOME/Downloads/mlDonkey>:/var/lib/mldonkey/incoming/files" \
     wibol/mldonkey-ubuntu
 
-mlDonkey stores data inside /var/lib/mldonkey/incoming/files container directory, so we mount it on local filesystem for easy access. We must remove "<>" and customize its content.
+We must remove "<>" and customize its content. mlDonkey stores data inside /var/lib/mldonkey/incoming/files container directory, so we mount it on local filesystem for easy access.
 
 
 ### To run container:
@@ -47,6 +47,8 @@ We must remove "<>" and customize its content. Incomming directory is owned by "
 
     sudo chmod -R 777 <~/Downloads/mlDonkey>
 
+We must remove "<>" and customize its content. 
+
 
 ### Other optional mounts:
 
@@ -54,7 +56,7 @@ We must remove "<>" and customize its content. Incomming directory is owned by "
     -v "</tmp/mldonkey>:/var/lib/mldonkey/temp" \
     -v "<$HOME/Video/mlDonkey>:/var/lib/mldonkey/shared" \
 
-If these directories are not mounted on a different place, they will all reside on the system's root partition, which is where Docker stores data by default. Be sure you have enough free space on it.
+We must remove "<>" and customize its content. If these directories are not mounted on a different place, they will all reside on the system's root partition, which is where Docker stores data by default. Be sure you have enough free space on it.
 
 ### Known problems:
 
