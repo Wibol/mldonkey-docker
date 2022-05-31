@@ -65,6 +65,6 @@ When creating the container we received the error:
 
 To resolve it we must remove "<>" from the local mount point.
 
-### Docker repository:
+### Repositories:
 
-https://hub.docker.com/r/wibol/mldonkey-ubuntu
+[mlDonkey in Docker](https://hub.docker.com/r/wibol/mldonkey-ubuntu "Docker mldonkey-ubuntu image repository.")
