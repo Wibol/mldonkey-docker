@@ -8,7 +8,7 @@ Dockerized mlDonkey 3.1.6 on Ubuntu 18.04 in 90MB image (only eDonkey and Kademl
 - Replaced deprecated update URLs maxmind.com, gruk.org and kceasy.com with emule-security.org.
 - Increased "client_buffer_size" to 5000000 for bandwidth optimisation.
 - Increased "max_upload_slots" to 10 for easier sharing.
-- Increased "ED2K-upload_timeout" to 60 to avoid queues full of idle clients.
+- Decreased "ED2K-upload_timeout" to 60 to avoid queues full of idle clients.
 
 
 ## Usage
