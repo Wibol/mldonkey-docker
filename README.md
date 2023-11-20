@@ -45,7 +45,7 @@ Open 20562/tcp, 20566/udp and 16965/udp ports in your router and OS.
 
     docker start mldonkey-ubuntu
 
-Then you can access mlDonkey like http://127.0.0.1:4080 or using "mldonkey-gui" installed from your distro repo.
+Then you can access mlDonkey like http://127.0.0.1:4080 or using "mldonkey-gui" installed from your distribution repository or https://pkgs.org/download/mldonkey-gui.
 
 - User: admin
 - Password: Passw0rd-
