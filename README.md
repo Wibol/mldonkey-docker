@@ -52,7 +52,7 @@ Then you can access mlDonkey like http://127.0.0.1:4080 :
 
 ![image](https://github.com/Wibol/mldonkey-docker/blob/main/d.png)
 
- Or using "mldonkey-gui" installed from your distribution repository or https://pkgs.org/download/mldonkey-gui :
+ Or using "mldonkey-gui" installed from your distribution repository or [Ubuntu Historical Archive](http://archive.ubuntu.com/ubuntu/pool/universe/m/mldonkey/) :
  
 ![image](https://github.com/Wibol/mldonkey-docker/blob/main/mldonkey-gui.png)
 
