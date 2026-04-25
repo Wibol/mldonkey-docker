@@ -47,15 +47,19 @@ Open 20562/tcp, 20566/udp and 16965/udp ports in your router and OS.
 
 Then you can access mlDonkey like http://127.0.0.1:4080 :
 
+![image](https://github.com/Wibol/mldonkey-docker/blob/main/d.png)
+
 - User: admin
 - Password: Passw0rd-
-
-![image](https://github.com/Wibol/mldonkey-docker/blob/main/d.png)
 
  Or using "mldonkey-gui" installed from your distribution repository or [Ubuntu Historical Archive](http://archive.ubuntu.com/ubuntu/pool/universe/m/mldonkey/) :
  
 ![image](https://github.com/Wibol/mldonkey-docker/blob/main/mldonkey-gui.png)
 
+- User: admin
+- Password: Passw0rd-
+
+> If you were unable to install the graphical interface due to missing packages in the repositories, there is still another way to [install mldonkey-gui and its dependencies](https://mldonkey.wibol.eu/#gui).
 
 You can change the default password later from the telnet, web or GUI command lines:
 
