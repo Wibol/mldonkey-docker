@@ -91,6 +91,6 @@ To resolve it we must remove "<>" from the local mount point.
 
 [mlDonkey in Docker - Webpage](https://mldonkey.wibol.eu/ "mldonkey-ubuntu image web.")
 
-[mlDonkey in Docker - Docker](https://hub.docker.com/r/wibol/mldonkey-ubuntu "mldonkey-ubuntu image repository in Docker.")
+[mlDonkey in Docker - DockerHub](https://hub.docker.com/r/wibol/mldonkey-ubuntu "mldonkey-ubuntu image repository in Docker.")
 
 [mlDonkey in Docker - Linux Mint](https://forums.linuxmint.com/viewtopic.php?t=396180 "mldonkey-ubuntu installation tutorial in Linux Mint.")
