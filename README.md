@@ -5,7 +5,7 @@ Dockerized mlDonkey 3.1.6 (eDonkey & Kademlia) on Ubuntu 18.04.
 > You will need to [install Docker](https://docs.docker.com/engine/install/) first.
 
 
-## Mods
+## Mods (07/19/2026)
 
 - Disabled all deprecated protocols.
 - Replaced deprecated update URLs with emule-security.org.
