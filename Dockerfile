@@ -10,5 +10,5 @@ ADD entrypoint.sh /
 RUN chmod +x /entrypoint.sh
 ENV MLDONKEY_DIR=/var/lib/mldonkey LC_ALL=C.UTF-8 LANG=C.UTF-8 MLDONKEY_ADMIN_PASSWORD=Passw0rd-
 VOLUME ["/var/lib/mldonkey"]
-EXPOSE 4080 4000 4001 20562 20566/udp 16965/udp
+EXPOSE 4000 4001 4080 20562 20566/udp 16965 16965/udp
 CMD /entrypoint.sh
