@@ -7,7 +7,7 @@ Dockerized mlDonkey 3.1.6 (eDonkey & Kademlia) on Ubuntu 18.04.
 
 ## Mods (07/19/2026)
 
-- Disabled all deprecated protocols.
+- Disabled all deprecated protocols (only eDonkey and Kademlia are working).
 - Replaced deprecated update URLs with emule-security.org.
 - Default settings optimised for broadband without overloading the provider’s router.
 - Used the “--network host” tag for container creation to avoid double NAT, thereby speeding up file sharing.
